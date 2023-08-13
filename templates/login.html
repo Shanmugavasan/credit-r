@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo3.jpeg') }}" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Noto+Serif+Vithkuqi&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigationbar">
+        <img src="{{ url_for('static', filename='images/bank.png') }}" alt="logo" width="150px"/>
+        <ul class="navigation">
+          <li class="navigationel">Services</li>
+          <li class="navigationel">FAQ</li>
+          <li class="navigationel">Corporate Website</li>
+          <li class="navigationel">CePay Lite (SBMOPS)</li>
+          <li class="navigationel">Donations</li>
+          <li class="navigationel">CB Donations</li>
+          <li class="navigationel">Electoral Bond</li>
+          <li class="navigationel">Videos</li>
+          <li class="navigationel">mCash</li>
+          <li class="navigationel">Apply for CB/ Current Account</li>
+          <li class="navigationel">NPS</li>
+          <li class="navigationel">CB Unipay</li>
+          <li class="navigationel">CB Loans</li>
+        </ul>
+      </div>
+      <div class="logincontainer">
+        <div>
+          <h4>
+            (<span class="clrred">Care:</span>Username and password are case
+            sensitive.)
+          </h4>
+        </div>
+        <div class="login">
+          <div class="loginbox">
+            <div class="username">
+              <label for="fname" class="message">Manager Name*</label><br />
+              <div>
+                <p class="hidestyle1 hide1">message</p>
+              </div>
+              <input type="text" class="input iborder uname" /><br />
+            </div>
+            <div class="password">
+              <label for="fname">Password*</label><br />
+              <p class="hidestyle2 hide2">message</p>
+              <input type="password" class="input iborder pass" /><br />
+            </div>
+            <div class="check">
+              <label for="fname">Enter the number as shown below*</label><br />
+              <p class="hidestyle3 hide3">message</p>
+              <input type="text" class="input iborder chec" />
+            </div>
+            <div class="randomnumber">
+              <h2><s class="rnumber"></s></h2>
+              <button class="reset">🔁Click To Generate Number</button>
+            </div>
+            <div class="button">
+              <button class="btn loginbt">Login</button>
+              <button class="btn">Signup</button>
+              <p class="forgot"><a href="">Forgot Password</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script>
+  const bankPageUrl = "{{ url_for('home') }}";
+</script>
+   <script src="{{ url_for('static', filename='login.js') }}"></script>
+  </body>
+</html>

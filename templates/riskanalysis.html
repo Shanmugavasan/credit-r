@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='riskanalysis.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Risk Analysis</h1>
+        <form method="post">
+            {% for i in range(1, 28) %}
+            <div class="form-group">
+                <label for="input{{ i }}">Feature {{ i }}:</label>
+                <input type="text" id="input{{ i }}" name="input{{ i }}" required>
+            </div>
+            {% endfor %}
+            <button type="submit">Analyze Risk</button>
+        </form>
+        <div class="result" id="result">
+            <p>Risk Result: <span id="riskResult"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            const riskResultSpan = document.getElementById('riskResult');
+
+            form.addEventListener('submit', async function(event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+                const responseData = await analyzeRisk(formData);
+
+                if (responseData.result !== undefined) {
+                    riskResultSpan.textContent = responseData.result;
+                }
+            });
+
+            async function analyzeRisk(formData) {
+                try {
+                    const response = await fetch('/home/riskanalysis', {
+                        method: 'post',
+                        body: formData
+                    });
+                    const data = await response.json();
+                    return data;
+                } catch (error) {
+                    console.error('An error occurred:', error);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codese Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bank.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo3.jpeg') }}" type="image/icon type">
+</head>
+<body>
+    <header>
+            <div class="navbar">
+                <img id="logo" src="{{ url_for('static', filename='images/bank.png') }}" alt="">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a class="menubar" href="">Sevices</li>
+                    <li><a class="menubar" href="">FAQ</a></li>
+                    <li><a class="menubar"  href="">Corprate Website</a></li>
+                    <li><a class="menubar"  href="">CBePay Lite (CBMOPS)</a> </li>
+                    <li><a class="menubar"  href="">Donations</a></li>
+                    <li><a class="menubar"  href="">CB Collect</a></li>
+                    <li><a class="menubar"  href="">Electoral Bond</a></li>
+                    <li><a class="menubar"  href="">Videos</a></li>
+                    <li><a class="menubar"  href="">Videos</a></li>
+                    <li><a class="menubar"  href="">mCash</a></li>
+                    <li><a class="menubar"  href="">Apply for CB/ Current Account</a></li>
+                    <li><a class="menubar"  href="">NPS</a></li>
+                    <li><a class="menubar"  href="">CBUnipay</a></li>
+                    <li><a class="menubar"  href="">CBLoans</a></li>
+                </ul>
+
+            </nav>
+           
+        
+    </header>
+    
+    <main>
+        <div class="container1"></div>
+       <marquee behavior="Scroll" direction="left and right" loop="infinite" ><center>Mandatory Profile password change after 365 days introduced for added security.   |   Customers who have installed “CB Secure OTP App” on their mobile and completed registration process will now receive Login OTP for OnlineCB.com on the app instead of SMS OTP   |   Call us toll free on 1800 1234 and 1800 2100 and get a wide range of services through CB Contact Centre   |   For added security, new functionality to maintain per day and per transaction limit for general merchant payment transactions has been implemented. Please visit Define Limit under profile section.   |   CB never asks for your Card/PIN/OTP/CVV details on phone, message or email. Please do not click on links received on your email or mobile asking your Bank/Card details.</center></marquee>
+        <div class="cards"><h1>Banks Cards You Own</h1>
+        </div>
+        <div class="flex2">
+        <div class="b1"><img src="{{ url_for('static', filename='images/2.png') }}" alt="" width="370px" height="300px"><a href="" class="apply"><button>Card Details</button></a></div>
+        <div class="b2"><img src="{{ url_for('static', filename='images/3.png') }}" alt="" width="370px" height="295px"><a href="" class="apply"><button>Card Details</button></a></div>
+        <div class="b3"><img src="{{ url_for('static', filename='images/4.png') }}" alt="" width="370px" height="300px"><a href="" class="apply"><button>Card Details</button></a></div>
+        </div>
+        <div class="flex2">
+        <div class="b4"><img src="{{ url_for('static', filename='images/5.png') }}" alt="" width="370px" height="300px"><a href="" class="apply"><button>Card Details</button></a></div>
+        <div class="b5"><img src="{{ url_for('static', filename='images/6.png') }}" alt="" width="370px" height="295px"><a href="" class="apply"><button>Card Details</button></a></div>
+        <div class="b6"><img src="{{ url_for('static', filename='images/7.png') }}" alt="" width="370px" height="300px"><a href="" class="apply"><button>Card Details</button></a></div>
+        </div>
+
+        <div class="checkbtn">
+	<a href="{{ url_for('riskanalysis') }}">
+            <button>Predict Credit Risk</button>
+        </a>
+	</div>
+       
+    </main>
+    <footer class="foot">
+        <div class="mainfoot">
+            <div class="line1">
+                <h5>about us</h5>
+                <p>Founder: Sanjeev Kumar.G</p>
+                <p>50+ Branches </p>
+                <p>10000 Employees</p>
+                <p>Oraganized 2003</p>
+                <p>Millions of loans</p>
+            </div>
+            <div class="line1">
+                <h5>Contact us</h5>
+                <p>codesebank@yhoo.com </p>
+                <p>ph: 044-90809080</p>
+                <p>Adayar</p>
+                <p>Chennai 600028</p>
+                <p>need</p>
+            </div>
+            <div class="line1">
+                <h5>Loans</h5>
+                <p>Education Loan</p>
+                <p>Home loan</p>
+                <p>Business loan</p>
+                <p>medical loan</p>
+                <p>Marriage Loan</p>
+            </div>
+            <div class="line1">
+                <h5>Help</h5>
+                <p>Server Down </p>
+                <p>customer care</p>
+                <p>Sevice</p>
+                <p>Informations</p>
+                <p>cancel</p>
+            </div>
+        </div>
+        <div>
+            <p id="down">EXPERIENCE THE CODESE BANK APP</p>
+             </div>
+             <div class="dl">
+              <a href="https://play.google.com/store/games?device=windows"><img src="{{ url_for('static', filename='images/play-store.webp') }}" alt="" width="180px" height="50px"></a>
+              <a href="https://www.apple.com/app-store/"><img src="{{ url_for('static', filename='images/app-store.webp') }}" alt="" width="180" height="50px"></a>
+        </div>
+             <div class="rights">
+                <p class="rights">CODESE Bank Limited & All rights Reserved</p>
+             </div>
+
+    </footer>
+    
+</body>
+</html>

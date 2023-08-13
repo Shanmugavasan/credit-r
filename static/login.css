@@ -1,0 +1,109 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.navigation {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  font-weight: bold;
+  background-color: #337ab7;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+.navigationel:hover {
+  cursor: pointer;
+  color: yellow;
+  text-decoration: underline;
+}
+.clrred {
+  color: red;
+  font-weight: 700;
+}
+.login {
+  display: flex;
+  justify-content: center;
+}
+.loginbox {
+  padding: 20px;
+  border: 4px solid #337ab7;
+  border-radius: 20px;
+  width: 500px;
+  height: 465px;
+}
+.banklogo {
+  float: right;
+}
+.username,
+.password,
+.check {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.randomnumber {
+  display: flex;
+}
+.button {
+  display: grid;
+}
+.btn {
+  padding: 4px;
+  margin-top: 20px;
+  background-color: #337ab7;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+}
+.btn:hover,
+.link:hover {
+  color: yellow;
+  cursor: pointer;
+}
+.input {
+  width: 350px;
+  height: 30px;
+  margin-top: 10px;
+}
+.rnumber {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(204, 0, 0);
+  background-color: rgb(245, 221, 200);
+}
+.input:hover {
+  border-radius: 10px;
+}
+.line {
+  display: none;
+}
+.reset {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  font-size: 18px;
+}
+.forgot {
+  text-align: center;
+  text-decoration: none;
+  font-size: larger;
+}
+.hidestyle1,
+.hidestyle2,
+.hidestyle3 {
+  color: red;
+  font-size: small;
+  margin: 0;
+  padding: 0;
+}
+.hide1,
+.hide2,
+.hide3 {
+  display: none;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
